@@ -6,10 +6,11 @@ jobs:
   runs-on: [windows-latest]
   steps:
   - uses: actions/checkout@v1
-  - name: Azure login
-    uses: Azure/login@v1.4.6
+  - name: Set up Azure CLI
+    uses: azure/setup-azure-cli@v1
     with:
-      creds: ${{ secrets.AZ_CRED }}
+     azcliversion: 2.28.0
+     creds: ${{ secrets.AZ_CRED }}
         
   - name: Create a resource group in azure
     run: az group create -l eastus -n My_RG
