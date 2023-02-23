@@ -7,7 +7,7 @@ jobs:
   steps:
   - uses: actions/checkout@v1
   - name: Azure login
-    uses: azure/login@v1
+    uses: Azure/login@v1.4.2
     with:
       creds: ${{ secrets.AZ_CRED }}
         
@@ -17,5 +17,4 @@ jobs:
   - name: Create a virtual machine in azure
     run: az vm create -g My_RG -n My_VM --image UbuntuLTS --admin-username myname --admin-password myname -l eastus
 
-      
-      
+     
