@@ -7,7 +7,7 @@ jobs:
   steps:
   - uses: actions/checkout@v1
   - name: Azure login
-    uses: Azure/login@v1.4.2
+    uses: Azure/login@v1.4.6
     with:
       creds: ${{ secrets.AZ_CRED }}
         
