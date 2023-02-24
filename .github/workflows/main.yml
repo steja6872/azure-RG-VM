@@ -9,7 +9,7 @@ jobs:
   - name: Log in with Azure
     uses: azure/login@v1
     with:
-      creds: ${{ secrets.AZURE_CREDENTIALS }}
+      creds: ${{ secrets.AZ_CRED }}
         
   - name: Create a resource group in azure
     run: az group create -l eastus -n My_RG
