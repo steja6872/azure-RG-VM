@@ -15,4 +15,4 @@ jobs:
     run: az group create -l eastus -n My_RG
       
   - name: Create a virtual machine in azure
-    run: az vm create -g My_RG -n My_VM --image UbuntuLTS --admin-username Myname --admin-password Myname@12345678 -l eastus
+    run: az vm create -g My_RG -n My_VM --image UbuntuLTS --admin-username Myname --admin-password Password@12345678 -l eastus
