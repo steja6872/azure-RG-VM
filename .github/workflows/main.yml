@@ -16,3 +16,4 @@ jobs:
       
   - name: Create a virtual machine in azure
     run: az vm create -g My_RG -n My_VM --image UbuntuLTS --admin-username myname --admin-password myname -l eastus
+
